@@ -10,12 +10,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Chamando o conteúdo da TextView pelo id e colocando em uma variável
+        // Chamando o conteúdo da ImagenButton pelo id e colocando em uma variável
         val bolinha = findViewById<Button>(R.id.bolinha)
+        val xizinho = findViewById<Button>(R.id.xizinho)
 
         bolinha.setOnClickListener(){
-            val intent = Intent(this, DificuldadeActivity::class.java)
+            val intent = Intent(this, ContraBolinhaActivity::class.java)
+            val opcao: Int = 0
+            intent.putExtra("opcao", opcao.toString())
+            startActivity(intent)
+
+        }
+
+        xizinho.setOnClickListener(){
+            val intent = Intent(this, ContraXizinhoActivity::class.java)
+            val opcao: Int = 1
+            intent.putExtra("opcao", opcao.toString())
             startActivity(intent)
         }
+
     }
 }

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".PartidaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="É sua vez!"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich_regular"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/vez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bolinha"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/hash"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="350dp"-->
+<!--        android:background="@drawable/hash"/>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+       <ImageButton
+           android:id="@+id/icon1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"/>
+
+       <Button
+           android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"/>
+
+       <Button
+           android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/icon6"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/icon7"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/icon8"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/icon9"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
