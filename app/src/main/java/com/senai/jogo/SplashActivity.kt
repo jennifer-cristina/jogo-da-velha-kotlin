@@ -12,11 +12,11 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         // Criar um time para abrir a segunda tela do aplicativo
-        Timer().schedule(2500) { abrirMain() }
+        Timer().schedule(2500) { abrirContraQuem() }
     }
 
-    private fun abrirMain() {
-        val intent = Intent(this, MainActivity::class.java)
+    private fun abrirContraQuem() {
+        val intent = Intent(this, ContraBolinhaActivity::class.java)
         startActivity(intent)
         finish()
     }
