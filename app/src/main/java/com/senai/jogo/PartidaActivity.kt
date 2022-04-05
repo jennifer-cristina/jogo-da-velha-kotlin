@@ -112,12 +112,10 @@ class PartidaActivity : AppCompatActivity() {
     fun jogar(btn: ImageButton, jogador: Int, array: IntArray) {
         if (jogador == 2) {
             btn.background = getDrawable(R.drawable.xizinho)
-            verificarVencedor(array)
-            verificarVelha(array)
+            verificarResultado(array, jogadorAtual = jogador )
         } else {
             btn.background = getDrawable(R.drawable.bolinha)
-            verificarVencedor(array)
-            verificarVelha(array)
+            verificarResultado(array, jogadorAtual = jogador )
         }
     }
 
@@ -138,7 +136,6 @@ class PartidaActivity : AppCompatActivity() {
             vez.background = getDrawable(R.drawable.xizinho)
         }
     }
-
 
     fun verificarVencedor(array: IntArray) : Boolean {
 
@@ -206,14 +203,28 @@ class PartidaActivity : AppCompatActivity() {
     }
 
     // Verificar se deu Velha
-    fun verificarVelha(array: IntArray){
+    fun verificarVelha(array: IntArray) : Boolean {
         if(array[0] != 0 && array[1] != 0 && array[2] != 0 && array[3] != 0
             && array[4] != 0 && array[5] != 0 && array[6] != 0 && array[7] != 0 && array[8] != 0){
-            if(!verificarVencedor(array)){
-                Toast.makeText(this, "deu véia", Toast.LENGTH_SHORT).show()
-            }
+            return true
+        } else {
+            return false
         }
     }
+
+    fun verificarResultado(array: IntArray, jogadorAtual: Int){
+        if(verificarVencedor(array)) {
+            val intent = Intent(this, FinalPartidaActivity::class.java)
+            val vencedor: Int = jogadorAtual
+            intent.putExtra("vencedor", vencedor.toString())
+            startActivity(intent)
+        } else if(verificarVelha(array)){
+            val intent = Intent(this, VelhaActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+
 
 
 }
