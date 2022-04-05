@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         bolinha.setOnClickListener(){
             val intent = Intent(this, PartidaActivity::class.java)
-            val opcao: Int = 0
+            val opcao: Int = 1
             intent.putExtra("opcao", opcao.toString())
             startActivity(intent)
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         xizinho.setOnClickListener(){
             val intent = Intent(this, PartidaActivity::class.java)
-            val opcao: Int = 1
+            val opcao: Int = 2
             intent.putExtra("opcao", opcao.toString())
             startActivity(intent)
         }
