@@ -3,15 +3,14 @@ package com.senai.jogo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 
-class PartidaActivity : AppCompatActivity() {
+class PartidaAmigoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_partida)
+        setContentView(R.layout.activity_partida_amigo)
 
 
         // descreve a atividade a iniciar e carrega todos os dados necessários.
@@ -144,6 +143,7 @@ class PartidaActivity : AppCompatActivity() {
             if (array[0] == array[1] && array[0] == array[2]) {
                 Toast.makeText(this, "vencedooooooor", Toast.LENGTH_SHORT).show()
                 return true
+
             }
         }
 

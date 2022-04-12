@@ -16,18 +16,20 @@ class DificuldadeActivity : AppCompatActivity() {
         val dificil = findViewById<Button>(R.id.dificil)
 
         facil.setOnClickListener(){
-            val intent = Intent(this, PartidaActivity::class.java)
+            val intent = Intent(this, EscolhaJogadorActivity::class.java)
+            val facil: Int = 3
+            intent.putExtra("facil", facil.toString())
             startActivity(intent)
         }
 
-        medio.setOnClickListener(){
-            val intent = Intent(this, PartidaActivity::class.java)
-            startActivity(intent)
-        }
-
-        dificil.setOnClickListener(){
-            val intent = Intent(this, PartidaActivity::class.java)
-            startActivity(intent)
-        }
+//        medio.setOnClickListener(){
+//            val intent = Intent(this, PartidaActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        dificil.setOnClickListener(){
+//            val intent = Intent(this, PartidaActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }

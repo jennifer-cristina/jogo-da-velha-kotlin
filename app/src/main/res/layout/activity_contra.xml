@@ -5,32 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/contra2"
+    android:background="@drawable/contra"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ContraXizinhoActivity">
+    tools:context=".ContraActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Competirá com"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:fontFamily="@font/aldrich_regular"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:layout_marginBottom="50dp"/>
 
     <ImageButton
         android:id="@+id/computador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/computador2"
-        android:layout_marginBottom="60dp"/>
+        android:background="@drawable/computador"
+        android:layout_marginBottom="50dp"/>
 
     <ImageButton
         android:id="@+id/amigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/amigo2"
-        android:layout_marginBottom="70dp"/>
+        android:background="@drawable/amigo"/>
 
 </LinearLayout>

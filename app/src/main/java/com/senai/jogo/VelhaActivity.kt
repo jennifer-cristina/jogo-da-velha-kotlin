@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
 
 class VelhaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,7 @@ class VelhaActivity : AppCompatActivity() {
         val novamente = findViewById<Button>(R.id.novamente)
 
         novamente.setOnClickListener(){
-            val intent = Intent(this, ContraBolinhaActivity::class.java)
+            val intent = Intent(this, ContraActivity::class.java)
             startActivity(intent)
         }
     }

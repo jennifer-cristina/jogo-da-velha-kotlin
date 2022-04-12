@@ -22,7 +22,7 @@ class FinalPartidaActivity : AppCompatActivity() {
         vencedor(vencedor, venceu)
 
         novamente.setOnClickListener(){
-            val intent = Intent(this, ContraBolinhaActivity::class.java)
+            val intent = Intent(this, ContraActivity::class.java)
             startActivity(intent)
         }
 

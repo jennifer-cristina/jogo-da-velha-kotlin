@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun abrirContraQuem() {
-        val intent = Intent(this, ContraBolinhaActivity::class.java)
+        val intent = Intent(this, ContraActivity::class.java)
         startActivity(intent)
         finish()
     }

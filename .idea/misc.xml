@@ -7,11 +7,15 @@
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/font/font.xml" value="0.396875" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_contra.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_contra_bolinha.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_contra_jogador.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_contra_xizinho.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_dificuldade.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_escolha_jogador.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_final_partida.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_partida.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_partida_amigo.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_partida_computador.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_splash2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/21276662/AndroidStudioProjects/jogo/app/src/main/res/layout/activity_velha.xml" value="0.36666666666666664" />

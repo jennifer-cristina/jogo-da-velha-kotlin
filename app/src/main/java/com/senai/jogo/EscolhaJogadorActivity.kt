@@ -5,17 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class EscolhaJogadorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_escolha_jogador)
 
         // Chamando o conteúdo da ImagenButton pelo id e colocando em uma variável
         val bolinha = findViewById<Button>(R.id.bolinha)
         val xizinho = findViewById<Button>(R.id.xizinho)
 
         bolinha.setOnClickListener(){
-            val intent = Intent(this, PartidaAmigoActivity::class.java)
+            val intent = Intent(this, PartidaComputadorActivity::class.java)
             val opcao: Int = 1
             intent.putExtra("opcao", opcao.toString())
             startActivity(intent)
@@ -23,11 +23,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         xizinho.setOnClickListener(){
-            val intent = Intent(this, PartidaAmigoActivity::class.java)
+            val intent = Intent(this, PartidaComputadorActivity::class.java)
             val opcao: Int = 2
             intent.putExtra("opcao", opcao.toString())
             startActivity(intent)
         }
-
     }
 }

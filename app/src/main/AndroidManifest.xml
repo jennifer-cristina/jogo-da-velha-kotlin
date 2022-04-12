@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jogo">
         <activity
+            android:name=".EscolhaJogadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PartidaComputadorActivity"
+            android:exported="false" />
+        <activity
             android:name=".VelhaActivity"
             android:exported="false" />
         <activity
@@ -19,10 +25,10 @@
             android:name=".ContraXizinhoActivity"
             android:exported="false" />
         <activity
-            android:name=".ContraBolinhaActivity"
+            android:name=".ContraActivity"
             android:exported="false" />
         <activity
-            android:name=".PartidaActivity"
+            android:name=".PartidaAmigoActivity"
             android:exported="false" />
         <activity
             android:name=".DificuldadeActivity"
