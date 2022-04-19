@@ -3,6 +3,7 @@ package com.senai.jogo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.Toast
 import kotlin.random.Random
@@ -34,16 +35,19 @@ class PartidaComputadorActivity : AppCompatActivity() {
         icon1.setOnClickListener() {
             jogar(icon1, jogador)
             icon1.setEnabled(false)
+            jogarComputador(sortearIcon(botoes))
         }
 
         icon2.setOnClickListener() {
-            vezComputador(computador, jogador, array,botoes)
+            jogar(icon2, jogador)
             icon2.setEnabled(false)
+            jogarComputador(sortearIcon(botoes))
         }
 
         icon3.setOnClickListener() {
-
+            jogar(icon3, jogador)
             icon3.setEnabled(false)
+            jogarComputador(sortearIcon(botoes))
         }
 
         icon4.setOnClickListener() {
@@ -86,6 +90,10 @@ class PartidaComputadorActivity : AppCompatActivity() {
         }
     }
 
+    fun jogarComputador(btn: ImageButton) {
+        btn.background = getDrawable(R.drawable.bolinha)
+    }
+
 
     fun vezComputador(computador: Int, jogador: Int, array: IntArray, botoes: Array<ImageButton>) {
 
@@ -103,6 +111,116 @@ class PartidaComputadorActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    fun sortearIcon(botoes: Array<ImageButton>) : ImageButton {
+        var posicao = Random.nextInt(0, 8)
+        while (botoes[posicao].isEnabled == false){
+            posicao = Random.nextInt(0, 8)
+        }
+        return botoes[posicao]
     }
 
     fun verificarVazio(botoes: Array<ImageButton>) : Boolean {
